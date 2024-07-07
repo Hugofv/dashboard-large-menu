@@ -1,9 +1,9 @@
 import './styles.css';
 
-const Input = ({ label, value, name }) => {
+const Input = ({ label, type = 'text', value, name }) => {
   return (
     <div className='wrapper-input'>
-      <input type='text' name={name} value={value} />
+      <input type={type} name={name} value={value} />
       <label>{label}</label>
     </div>
   );

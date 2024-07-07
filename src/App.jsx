@@ -74,8 +74,20 @@ const App = () => {
         </InfiniteScroll>
       </div>
       {selectedItem && (
-        <form>
+        <form className='form-menu'>
           <Input label='Name' name='name' value={selectedItem.name} />
+          <Input
+            label='Internal Name'
+            name='name'
+            value={selectedItem.internalName}
+          />
+          <Input label='URL' name='url' type='url' value={selectedItem.url} />
+          <Input
+            label='Price'
+            name='price'
+            type='number'
+            value={selectedItem.price}
+          />
         </form>
       )}
     </main>
